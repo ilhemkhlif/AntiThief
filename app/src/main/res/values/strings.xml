@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AutoSms</string>
+    <string name="app_name">AntiThief</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="action_modify_code">Modify secret code</string>
+    <string name="action_about">About us</string>
+    <string name="pref_previously_started">true</string>
+   <string name="title_activity_modify_code">modifycode</string>
 </resources>

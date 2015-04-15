@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,14 +7,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
-    android:id="@+id/act">
+    android:id="@+id/FirstL"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1">
 
-    <Button
+
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_marginTop="116dp" />
+        android:text="Activate code :"
+        android:id="@+id/switch1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14" />
 
-</RelativeLayout>
-<!-- From: file:/D:/GI2%20TRIM2/Download/SmsAutoAnswer-master1/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout>

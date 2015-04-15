@@ -1,1 +1,2 @@
-D:\GI2 TRIM2\Download\SmsAutoAnswer-master1\app\build\intermediates\classes\debug
+C:\Users\ASUS\Documents\GitHub\AntiThief\app\build\intermediates\classes\debug
+C:\Users\ASUS\Documents\GitHub\AntiThief\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-eb83dc1787887d46bf76221949b0ea775167b6c5.jar

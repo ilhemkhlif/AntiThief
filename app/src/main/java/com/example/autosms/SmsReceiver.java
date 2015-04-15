@@ -9,7 +9,7 @@ import android.telephony.gsm.SmsMessage;
 import android.util.Log;
 
 import java.util.ArrayList;
- 
+
 public class SmsReceiver extends BroadcastReceiver
 {
     GPSTracker gps;
@@ -63,16 +63,19 @@ public class SmsReceiver extends BroadcastReceiver
                 
                 messageRecu = msgs[i].getMessageBody().toLowerCase().replaceAll(" ", "");
                 if(messageRecu!=null) {
-                    if(messageRecu.equals("help")) {
+
+
+                    if(messageRecu.equals(FirstMainActivity.GetCode())){
                         messageAEnvoyer="Latitude: "+latitudeStr+"\r\nLongitude: "+longitudeStr ;
                     } else {
 	                	messageAEnvoyer=devinette(messageRecu, numTel);
 	                }
-	                
+
 	                if(!messageAEnvoyer.equals("")) {
                 		longMessage=smsManager.divideMessage(messageAEnvoyer);
                 		smsManager.sendMultipartTextMessage(numTel, null, longMessage, null, null);
 	                }
+
                 }    
             }
         }                         
@@ -121,4 +124,6 @@ public class SmsReceiver extends BroadcastReceiver
         }
         return new String(chars);
     }
+
+
 }
